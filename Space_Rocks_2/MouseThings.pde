@@ -1,7 +1,7 @@
 class Mousey {
   PVector loc;
   boolean nav;
-  boolean carve;
+  //boolean carve;//implement this in a new program
 
   float navZone;
 
@@ -33,9 +33,7 @@ class Mousey {
   //remember to only use this in the nav zone
     PVector temp = PVector.sub(centre,loc);
     return temp;
-    
-    
-    
+  
   }
   
   

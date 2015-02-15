@@ -1,6 +1,7 @@
 class Player {
 
   PVector loc;
+  PVector ploc;
   PVector vel;
   PVector acc;
     float speed;
@@ -19,6 +20,7 @@ class Player {
     vel = new PVector(0,0,0);
     acc = new PVector(0,0,0);
     dir = new PVector(0, 0, 0);
+    ploc = new PVector(0,0,0);
     speed = 5;
     ang_speed = 10;
   }
@@ -47,14 +49,15 @@ class Player {
 
 
   void update() {
+    ploc.set(loc);
     
     
-    //update dir so it is always just ahead of the camera
+    //update dir 
+    //dir.sub(loc, ploc);
+    //dir.normalize();
     
-    
-    
-    
-text(loc.x+","+loc.y+","+loc.z+" LOC",10,20);
+
+
 
 // eyeX, eyeY, eyeZ
     //dir.x, dir.y, dir.z,

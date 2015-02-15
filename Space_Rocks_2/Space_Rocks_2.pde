@@ -39,6 +39,7 @@ PVector centre;
 Starfield milkyway;
 Mousey mousey;
 Player player;
+HUD hud;
 
 void setup() {
   size(sq, sq, P3D);
@@ -46,6 +47,7 @@ void setup() {
   milkyway = new Starfield(new PVector(0, 0),500);
   mousey = new Mousey();
   player = new Player();
+  hud = new HUD();
 }
 
 
@@ -55,5 +57,7 @@ void draw() {
   milkyway.run();
   mousey.run();
   player.run();
+  hud.run();
+  image(hud.pg, 0, 0);
 }
 
