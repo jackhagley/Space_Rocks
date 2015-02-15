@@ -28,12 +28,12 @@ class Starfield {
     for (int i = 0; i<stars.length; i++) {
 
     stroke(255);
-    //strokeWeight(2);
+    strokeWeight(3);
     
     pushMatrix();
     translate(stars[i].x, stars[i].y, stars[i].z);
-    //point(0, 0);
-    box(10);
+    point(0, 0);
+    //box(10);
     
      popMatrix();
     }
